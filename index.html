@@ -7,17 +7,17 @@
   </head>
 
   <body>
-    <div> 
-      <div id="app" class="inner"> 
+    <div id="app"> 
+      <div v-for="animal in animals" class="inner"> 
         <div class="namecontainer">
-          {{name}}
+          {{animal.name}}
         </div>
         <div class="metercontainer"> 
           <div class="meter level5">
           </div>
         </div>
         <div class="statuscontainer">
-          {{level}}
+          {{animal.level}}
         </div>
         <div>
           <img src="https://assets3.thrillist.com/v1/image/2624055/size/tmg-article_tall.jpg" class="image">
@@ -26,7 +26,7 @@
           <div class="threats">
             <h1 class="threatheading">Threats</h1>
             <ul> 
-              <li v-for="threat in threats">
+              <li v-for="threat in animal.threats">
                 {{threat.text}}
               </li>
             </ul>
@@ -34,7 +34,7 @@
           <div class="facts">
             <h1 class="factsheading">Facts</h1>
             <ul> 
-              <li v-for="fact in facts">
+              <li v-for="fact in animal.facts">
                 {{fact.text}}
               </li>
             </ul>
