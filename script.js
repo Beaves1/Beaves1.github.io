@@ -6,8 +6,9 @@ const App = new Vue({
     [
       {
         name: 'Brown Kiwi', 
-        level: 'Status Level 5: Declining',
-        meterclass: 'meter level5',
+        status: 'Declining',
+        level: 5,
+        image: 'https://assets3.thrillist.com/v1/image/2624055/size/tmg-article_tall.jpg', 
         threats: 
         [
           { text: 'Dogs' },

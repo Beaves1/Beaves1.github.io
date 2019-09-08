@@ -13,14 +13,14 @@
           {{animal.name}}
         </div>
         <div class="metercontainer"> 
-          <div class="meter level5">
+          <div v-bind:class="'meter level' + animal.level">
           </div>
         </div>
         <div class="statuscontainer">
-          {{animal.level}}
+          Status Level {{animal.level}}: {{animal.status}}
         </div>
         <div>
-          <img src="https://assets3.thrillist.com/v1/image/2624055/size/tmg-article_tall.jpg" class="image">
+          <img v-bind:src="animal.image" class="image">
         </div>
         <div class="infocontainer">
           <div class="threats">
