@@ -8,7 +8,7 @@ const App = new Vue({
         name: 'Brown Kiwi', 
         status: 'Declining',
         level: 5,
-        image: 'https://assets3.thrillist.com/v1/image/2624055/size/tmg-article_tall.jpg', 
+        image: 'images/brown-kiwi-600x338.jpg', 
         threats: 
         [
           { text: 'Dogs' },
@@ -30,7 +30,7 @@ const App = new Vue({
         name: 'Kea',
         status: 'Nationally Endangered',
         level: 7,
-        image: "https://cdn.pixabay.com/photo/2017/03/12/23/31/kea-2138420_960_720.jpg",
+        image: 'images/kea-600x338.jpg',
         threats: 
         [
           { text: 'Lead Poisoning' },
