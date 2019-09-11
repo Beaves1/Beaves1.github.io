@@ -50,11 +50,11 @@ const App = new Vue({
         ]
       },
       {
-                name: 'Kea',
+                name: 'Yellow-Eyed Penguin',
         zoom: false,
         status: 'Nationally Endangered',
         level: 7,
-        image: 'yellow-eyed-penguin-600x338.jpg',
+        image: 'images/yellow-eyed-penguin-600x338.jpg',
         threats: 
         [
           { text: 'Habitat Loss' },
