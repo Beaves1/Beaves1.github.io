@@ -6,6 +6,7 @@ const App = new Vue({
     [
       {
         name: 'Brown Kiwi', 
+        zoom: false,
         status: 'Declining',
         level: 5,
         image: 'images/brown-kiwi-600x338.jpg', 
@@ -28,6 +29,7 @@ const App = new Vue({
       },
       {
         name: 'Kea',
+        zoom: false,
         status: 'Nationally Endangered',
         level: 7,
         image: 'images/kea-600x338.jpg',
@@ -41,7 +43,7 @@ const App = new Vue({
         ],
         facts: 
         [
-          { text: 'Kea are known well for their intelligence and curiosity' },
+          { text: 'Known for their intelligence and curiosity' },
           { text: 'Most wild Kea are estimated to live for 5 years' },
           { text: 'Feeds on plants mainly, although they are known to eat human rubbish' },
           { text: 'A loud and mischevious bird' },

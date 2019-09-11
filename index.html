@@ -10,7 +10,7 @@
 
   <body>
     <div id="app"> 
-      <div v-for="animal in animals" class="card"> 
+      <div v-for="animal in animals" v-on:click="animal.zoom=!animal.zoom" v-bind:class="'card ' +  (animal.zoom ? 'zoom' : '')"> 
         <div class="namecontainer">
           {{animal.name}}
         </div>
