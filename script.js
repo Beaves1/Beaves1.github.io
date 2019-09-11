@@ -23,7 +23,7 @@ const App = new Vue({
           { text: 'The Kiwi are the only birds that have nostrils on the tip of their beak' },
           { text: 'Only found in the North Island' },
           { text: 'Feeds on insects mainly' },
-          { text: 'It has small wings but is flightless beacause of its heavy bone structure' },
+          { text: 'Has small wings but is flightless because of its heavy bone structure' },
           { text: 'Mainly a nocturnal bird' },
         ]
       },
