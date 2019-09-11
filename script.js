@@ -48,7 +48,28 @@ const App = new Vue({
           { text: 'Feeds on plants mainly, although they are known to eat human rubbish' },
           { text: 'A loud and mischevious bird' },
         ]
-      }
+      },
+      {
+                name: 'Kea',
+        zoom: false,
+        status: 'Nationally Endangered',
+        level: 7,
+        image: '',
+        threats: 
+        [
+          { text: 'Habitat Loss' },
+          { text: 'Diseases' },
+          { text: 'Fishing Nets' },
+          { text: 'Dogs' },
+          { text: 'Human Disturbance' }
+        ],
+        facts: 
+        [
+          { text: 'Fish makes up 90% of its diet' },
+          { text: 'Weighs 5-6 kilograms and has a height of 65 centimetres' },
+          { text: 'Recognisable for its yellow eye and yellow feathers running from each eye' },
+          { text: 'Dives to depths between 40-120m to catch food' },
+        ]
     ]
   }
 });
