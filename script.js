@@ -45,7 +45,7 @@ const App = new Vue({
         [
           { text: 'Known for their intelligence and curiosity' },
           { text: 'Most wild Kea are estimated to live for 5 years' },
-          { text: 'Feeds on plants mainly, although they are known to eat human rubbish' },
+          { text: 'Feeds on plants mainly, although they are known to eat rubbish' },
           { text: 'A loud and mischevious bird' },
         ]
       },
@@ -67,7 +67,7 @@ const App = new Vue({
         [
           { text: 'Fish makes up 90% of its diet' },
           { text: 'Weighs 5-6 kilograms and has a height of 65 centimetres' },
-          { text: 'Recognisable for its yellow eye and yellow feathers running from each eye' },
+          { text: 'Known for its yellow eye and yellow feathers running from each eye' },
           { text: 'Dives to depths between 40-120m to catch food' },
         ]
       }
