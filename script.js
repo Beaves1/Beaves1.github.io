@@ -54,7 +54,7 @@ const App = new Vue({
         zoom: false,
         status: 'Nationally Endangered',
         level: 7,
-        image: '',
+        image: 'yellow-eyed-penguin-600x338.jpg',
         threats: 
         [
           { text: 'Habitat Loss' },
@@ -70,6 +70,7 @@ const App = new Vue({
           { text: 'Recognisable for its yellow eye and yellow feathers running from each eye' },
           { text: 'Dives to depths between 40-120m to catch food' },
         ]
+      }
     ]
   }
 });
