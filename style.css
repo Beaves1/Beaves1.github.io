@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 .namecontainer {
   color: black;
   background-color: green;
@@ -7,7 +11,6 @@
   font-size: 2.5rem;
   padding: 3px 25px;
   margin-bottom: 5px;
-  font: bold;
 }
 .card {
   text-align: center;
@@ -23,8 +26,7 @@
 }
 .metercontainer {
   border: 4px solid black;
-  margin-bottom: 5px;
-  width: 95%;
+  width: 100%;
   display: inline-block;
 }
 .meter {
@@ -72,12 +74,14 @@
   background-color: green;
 }
 .image {
-  width: 95%;
+  width: 100%;
   border: 4px solid black;
-  margin-bottom: 5px;
+}
+.infocontainer {
+  border-spacing: 2px;
 }
 .infocontainer div {
-  display: inline-block;
+  display: table-cell;
   border: 3px solid black;
   vertical-align: top;
   text-align: left;
@@ -89,11 +93,9 @@
 }
 .threats {
   width: 30%;
-  height: 100%;
 }
 .facts {
-  width: 55%;
-  height: 100%;
+  width: 70%;
 }
 .threatheading {
   font-size: 1.5rem;
