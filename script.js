@@ -88,9 +88,9 @@ const App = new Vue({
         facts: 
         [
           { text: 'Can live for up to 90 years' },
-          { text: 'Is the only flightless parrot in the world' },
+          { text: 'The only flightless parrot in the world' },
           { text: 'Since 1989 intensive efforts have been set up to protect the species, with remaining Kakapo being moved to predator free islands' },
-          { text: 'Known to freeze when startled, making them easy to catch for predators' },
+          { text: 'Freeze when startled, making them easy to catch for predators' },
         ]
       }
     ]
