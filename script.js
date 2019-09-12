@@ -23,8 +23,9 @@ const App = new Vue({
           { text: 'The Kiwi are the only birds that have nostrils on the tip of their beak' },
           { text: 'Only found in the North Island' },
           { text: 'Feeds on insects mainly' },
-          { text: 'Has small wings but is flightless because of its heavy bone structure' },
+          { text: 'Has small wings but is flightless' },
           { text: 'Mainly a nocturnal bird' },
+          { text: 'Female Kiwis are both heavier and bigger than Male Kiwis' },
         ]
       },
       {
@@ -47,10 +48,11 @@ const App = new Vue({
           { text: 'Most wild Kea are estimated to live for 5 years' },
           { text: 'Feeds on plants mainly, although they are known to eat rubbish' },
           { text: 'A loud and mischevious bird' },
+          { text: 'Named Kea, after the sound of its call' },
         ]
       },
       {
-                name: 'Yellow-Eyed Penguin',
+        name: 'Yellow-Eyed Penguin',
         zoom: false,
         status: 'Nationally Endangered',
         level: 7,
@@ -69,6 +71,7 @@ const App = new Vue({
           { text: 'Weighs 5-6 kilograms and has a height of 65 centimetres' },
           { text: 'Known for its yellow eye and yellow feathers running from each eye' },
           { text: 'Dives to depths between 40-120m to catch food' },
+          { text: 'Moult all their feathers yearly' },
         ]
       },
       {
