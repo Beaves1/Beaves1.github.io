@@ -70,6 +70,28 @@ const App = new Vue({
           { text: 'Known for its yellow eye and yellow feathers running from each eye' },
           { text: 'Dives to depths between 40-120m to catch food' },
         ]
+      },
+      {
+        name: 'Kakapo',
+        zoom: false,
+        status: 'Nationally Critical',
+        level: 8,
+        image: 'images/kakapo-600x338.jpg',
+        threats: 
+        [
+          { text: 'Cats' },
+          { text: 'Diseases' },
+          { text: 'Stoats' },
+          { text: 'Habitat Loss' },
+          { text: 'Genetic Inbreding' }
+        ],
+        facts: 
+        [
+          { text: 'Can live for up to 90 years' },
+          { text: 'Is the only flightless parrot in the world' },
+          { text: 'Since 1989 intensive efforts have been set up to protect the species, with remaining Kakapo being moved to predator free islands' },
+          { text: 'Known to freeze when startled, making them easy to catch for predators' },
+        ]
       }
     ]
   }
