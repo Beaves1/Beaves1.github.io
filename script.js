@@ -86,7 +86,7 @@ const App = new Vue({
           { text: 'Diseases' },
           { text: 'Stoats' },
           { text: 'Habitat Loss' },
-          { text: 'Genetic Inbreding' }
+          { text: 'Genetic Inbreeding' }
         ],
         facts: 
         [
