@@ -137,7 +137,7 @@ const App = new Vue({
         facts: 
         [
           { text: 'Are capable at flying and are strong swimmers' },
-          { text: 'Since they are a common bird, they are allowed to be hunted under license' },
+          { text: 'Are allowed to be hunted under license, because they are common' },
           { text: 'Can be aggressive, particuarly in self defence against predators' },
           { text: 'Feeds mostly on plants and occasionally various insects' },
           { text: 'Recognisable by their red, black and blue colouring' },
