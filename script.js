@@ -117,7 +117,7 @@ const App = new Vue({
         ],
         facts: 
         [
-          { text: 'Very terrotorial and mostly stay in the same area of land for their entire life' },
+          { text: 'Very territorial and mostly stay in the same area of land for their entire life' },
           { text: 'Requires clean, fast flowing rivers to live in' },
           { text: 'Is featured on the $10 note' },
           { text: 'Camoflagues well in water because of its blue and grey feathers' },
