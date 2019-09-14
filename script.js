@@ -100,7 +100,49 @@ const App = new Vue({
           { text: 'Since 1989 intensive efforts have been set up to protect the species, with remaining Kakapo being moved to predator free islands' },
           { text: 'Freeze when startled, making them easy to catch for predators' },
         ]
-      }
+      },
+      {
+        name: 'Blue Duck',
+        zoom: false,
+        status: 'Nationally Vunerable',
+        level: 6,
+        image: 'images/blue-duck-600x338.jpg',
+        threats: 
+        [
+          { text: 'Habitat Loss' },
+          { text: 'Human Disturbance' },
+          { text: 'Stoats' },
+          { text: 'Rats' },
+          { text: 'Possums' }
+        ],
+        facts: 
+        [
+          { text: 'Very terrotorial and mostly stay in the same area of land for their entire life' },
+          { text: 'Requires clean, fast flowing rivers to live in' },
+          { text: 'Is featured on the $10 note' },
+          { text: 'Camoflagues well in water because of its blue and grey feathers' },
+          { text: 'Feeds on larvae and other aquatic insects' },
+        ]
+      },
+      {
+        name: 'Pukeko',
+        zoom: false,
+        status: 'Not Threatened',
+        level: 1,
+        image: 'images/pukeko-600x338.jpg',
+        threats: 
+        [
+          { text: 'There are no significant threats to the Pukeko population, as they are "Not Threatened"' },
+        ],
+        facts: 
+        [
+          { text: 'Are capable at flying and are strong swimmers' },
+          { text: 'Since they are a common bird, they are allowed to be hunted under license' },
+          { text: 'Can be aggressive, particuarly in self defence against predators' },
+          { text: 'Feeds mostly on plants and occasionally various insects' },
+          { text: 'Recognisable by their red, black and blue colouring' },
+        ]
+      },
     ]
   }
 });
