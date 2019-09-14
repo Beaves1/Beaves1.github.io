@@ -9,8 +9,12 @@
   </head>
 
   <body>
-    <div id="app"> 
-      <div v-for="animal in animals" v-on:click="animal.zoom=!animal.zoom" v-bind:class="'card ' +  (animal.zoom ? 'zoom' : '')"> 
+    <div>
+      New Zealand native animals kiwi kea
+    </div>
+
+    <script type="text/x-template" id="card-template">
+      <div v-on:click="animal.zoom=!animal.zoom" v-bind:class="'card ' +  (animal.zoom ? 'zoom' : '')"> 
         <div class="namecontainer">
           {{animal.name}}
         </div>
@@ -43,6 +47,11 @@
           </div>
         </div>
       </div>
+    </script>
+
+    <div id="app"> 
+      <card v-for="a in animals" v-bind:animal="a">
+      </card>
     </div>
 
     <!-- start vue app, after app div loaded -->

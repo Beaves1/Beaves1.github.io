@@ -1,3 +1,8 @@
+Vue.component('card', {
+  props: ['animal'],
+  template: '#card-template'
+});
+
 const App = new Vue({
   el: '#app',
   data: 
