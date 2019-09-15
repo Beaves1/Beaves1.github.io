@@ -143,6 +143,48 @@ const App = new Vue({
           { text: 'Recognisable by their red, black and blue colouring' },
         ]
       },
+      {
+        name: 'Hectors Dolphin',
+        zoom: false,
+        status: 'Nationally Vunerable',
+        level: 6,
+        image: 'images/hectors-dolphin-600x338.jpg',
+        threats: 
+        [
+          { text: 'Fishing' },
+          { text: 'Tourism' },
+          { text: 'Diseases' },
+          { text: 'Water Pollution' },
+          { text: 'Boat Disturbance' },
+        ],
+        facts: 
+        [
+          { text: 'Is one of the smallest dolphins in the world' },
+          { text: 'In the past, Maori would predict the weather based off its movements' },
+          { text: 'Uses echolocation to find its food' },
+          { text: 'Found in the water around The South Island' },
+          { text: 'Recognisable for its distinctive grey, black and white colour along with its round dorsal fin' },
+        ]
+      },
+      {
+        name: 'NZ Fur Seal',
+        zoom: false,
+        status: 'Not Threatened',
+        level: 1,
+        image: 'images/nz-fur-seal-600x338.jpg',
+        threats: 
+        [
+          { text: 'There are no significant threats to the Pukeko population, as they are "Not Threatened"' },
+
+        ],
+        facts: 
+        [
+          { text: 'Adult males generally weigh nearly triple the weight of adult females' },
+          { text: 'Feed mainly on squid and smaller fish, though can eat some slightly larger sea creatures' },
+          { text: 'Underneath their fur coat is a thick layer of blubber' },
+          { text: 'Spend days out at sea for food and then return to shore to rest' },
+        ]
+      },     
     ]
   }
 });
