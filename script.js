@@ -162,7 +162,7 @@ const App = new Vue({
           { text: 'Is one of the smallest dolphins in the world' },
           { text: 'In the past, Maori would predict the weather based off its movements' },
           { text: 'Uses echolocation to find its food' },
-          { text: 'Found in the water around The South Island' },
+          { text: 'Found in the water surrounding the South Island' },
           { text: 'Recognisable for its distinctive grey, black and white colour along with its round dorsal fin' },
         ]
       },
@@ -174,7 +174,7 @@ const App = new Vue({
         image: 'images/nz-fur-seal-600x338.jpg',
         threats: 
         [
-          { text: 'There are no significant threats to the Pukeko population, as they are "Not Threatened"' },
+          { text: 'There are no significant threats to the NZ Fur Seal population, as they are "Not Threatened"' },
 
         ],
         facts: 
