@@ -7,6 +7,7 @@ const App = new Vue({
   el: '#app',
   data: 
   {
+    selected: null,
     animals: 
     [
       {

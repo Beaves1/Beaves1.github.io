@@ -14,7 +14,8 @@
     </div>
 
     <script type="text/x-template" id="card-template">
-      <div v-on:click="animal.zoom=!animal.zoom" v-bind:class="'card ' +  (animal.zoom ? 'zoom' : '')"> 
+      <div v-on:click="animal.zoom=!animal.zoom;selected=animal;"
+          class="card" v-bind:class="{'zoom': animal.zoom}"> 
         <div class="namecontainer">
           {{animal.name}}
         </div>
@@ -51,6 +52,8 @@
 
     <div id="app"> 
       <card v-for="a in animals" v-bind:animal="a">
+      </card>
+      <card v-bind:animal="selected">
       </card>
     </div>
 
