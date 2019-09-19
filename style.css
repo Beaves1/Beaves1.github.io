@@ -16,6 +16,14 @@
   transform: scale(0.4);
   transform-origin: top left;
 }
+
+.card.notshrunk {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -24rem;
+  margin-left: -16rem;
+}
 .card {
   text-align: center;
   background-color: #A76C28;
