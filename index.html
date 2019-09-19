@@ -14,46 +14,48 @@
     </div>
 
     <script type="text/x-template" id="card-template">
-      <div v-on:click="animal.zoom=!animal.zoom;selected=animal;"
-          class="card" v-bind:class="{'zoom': animal.zoom}"> 
-        <div class="namecontainer">
-          {{animal.name}}
-        </div>
-        <div class="metercontainer"> 
-          <div v-bind:class="'meter level' + animal.level">
+      <div class="wrapper" v-bind:class="{'shrunk': small}">
+        <div v-on:click="selected.anyname=animal;"
+            class="card" v-bind:class="{'shrunk': small}">
+          <div class="namecontainer">
+            {{animal.name}}
           </div>
-        </div>
-        <div class="statuscontainer">
-          Status Level {{animal.level}}: {{animal.status}}
-        </div>
-        <div>
-          <img v-bind:src="animal.image" class="image">
-        </div>
-        <div class="infocontainer">
-          <div class="threats">
-            <h1 class="infoheading">Threats</h1>
-            <ul> 
-              <li v-for="threat in animal.threats">
-                {{threat.text}}
-              </li>
-            </ul>
+          <div class="metercontainer"> 
+            <div v-bind:class="'meter level' + animal.level">
+            </div>
           </div>
-          <div class="facts">
-            <h1 class="infoheading">Facts</h1>
-            <ul> 
-              <li v-for="fact in animal.facts">
-                {{fact.text}}
-              </li>
-            </ul>
+          <div class="statuscontainer">
+            Status Level {{animal.level}}: {{animal.status}}
+          </div>
+          <div>
+            <img v-bind:src="animal.image" class="image">
+          </div>
+          <div class="infocontainer">
+            <div class="threats">
+              <h1 class="infoheading">Threats</h1>
+              <ul> 
+                <li v-for="threat in animal.threats">
+                  {{threat.text}}
+                </li>
+              </ul>
+            </div>
+            <div class="facts">
+              <h1 class="infoheading">Facts</h1>
+              <ul> 
+                <li v-for="fact in animal.facts">
+                  {{fact.text}}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </script>
 
     <div id="app"> 
-      <card v-for="a in animals" v-bind:animal="a">
+      <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true">
       </card>
-      <card v-bind:animal="selected">
+      <card v-bind:animal="selected.anyname" v-bind:selected="selected" v-if="selected.anyname">
       </card>
     </div>
 

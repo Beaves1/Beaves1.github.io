@@ -1,5 +1,5 @@
 Vue.component('card', {
-  props: ['animal'],
+  props: ['animal','selected','small'],
   template: '#card-template'
 });
 
@@ -7,7 +7,7 @@ const App = new Vue({
   el: '#app',
   data: 
   {
-    selected: null,
+    selected: { anyname: null},
     animals: 
     [
       {
