@@ -15,7 +15,7 @@
 
     <script type="text/x-template" id="card-template">
       <div class="wrapper" v-bind:class="{'shrunk': small}">
-        <div v-on:click="selected.anyname=animal;"
+        <div v-on:click="selected.anyname=selected.anyname==animal?null:animal;"
             class="card" v-bind:class="{'shrunk': small, 'notshrunk': !small}">
           <div class="namecontainer">
             {{animal.name}}
@@ -55,7 +55,7 @@
     <div id="app"> 
       <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true">
       </card>
-      <card v-bind:animal="selected.anyname" v-bind:selected="selected" v-if="selected.anyname" v-bind:small="false">
+      <card v-if="selected.anyname" v-bind:animal="selected.anyname" v-bind:selected="selected" v-bind:small="false">
       </card>
     </div>
 
