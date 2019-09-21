@@ -3,10 +3,11 @@
   box-sizing: border-box;
 }
 #banner {
-  background-color: green;
+  min-height: 3rem;  
 }
+
 .button {
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: green;
 }
 .namecontainer {
@@ -38,21 +39,23 @@
   display: inline-block;
   transition: transform .2s;
 }
-.card.theme1 {
+.theme1 .card,
+.theme1 #banner {
   background-color: #A76C28;
 }
 .theme1 .namecontainer,
 .theme1 .statuscontainer,
 .theme1 .infocontainer div {
-  background-color: green;
+  background-color: #61892f;
 }
-.card.theme2 {
+.theme2 .card,
+.theme2 #banner {
   background-color: silver;
 }
 .theme2 .namecontainer,
 .theme2 .statuscontainer,
 .theme2 .infocontainer div {
-  background-color: #378683;
+  background-color: #3c98959c;
 }
 .wrapper.shrunk {
   float: left;
