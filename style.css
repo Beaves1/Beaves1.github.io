@@ -2,10 +2,15 @@
 * {
   box-sizing: border-box;
 }
-
+#banner {
+  background-color: green;
+}
+.button {
+  font-size: 2rem;
+  background-color: green;
+}
 .namecontainer {
   color: black;
-  background-color: green;
   display: inline-block;
   border: 3px solid black;
   font-size: 2.5rem;
@@ -16,7 +21,6 @@
   transform: scale(0.4);
   transform-origin: top left;
 }
-
 .card.notshrunk {
   position: fixed;
   top: 50%;
@@ -26,7 +30,6 @@
 }
 .card {
   text-align: center;
-  background-color: #A76C28;
   width: 32rem;
   border: 1px solid black;
   font-family: Verdana, Arial;
@@ -34,6 +37,22 @@
   padding: 5px;
   display: inline-block;
   transition: transform .2s;
+}
+.card.theme1 {
+  background-color: #A76C28;
+}
+.theme1 .namecontainer,
+.theme1 .statuscontainer,
+.theme1 .infocontainer div {
+  background-color: green;
+}
+.card.theme2 {
+  background-color: silver;
+}
+.theme2 .namecontainer,
+.theme2 .statuscontainer,
+.theme2 .infocontainer div {
+  background-color: #378683;
 }
 .wrapper.shrunk {
   float: left;
@@ -88,7 +107,6 @@
   border: 2px solid black;
   display: inline-block;
   padding: 3px 25px;
-  background-color: green;
 }
 .image {
   width: 100%;
@@ -102,7 +120,6 @@
   border: 3px solid black;
   vertical-align: top;
   text-align: left;
-  background-color: green;
   padding: 1px 10px;
 }
 .infocontainer ul {
