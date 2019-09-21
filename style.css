@@ -2,10 +2,12 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: Verdana, Arial;
+}
 #banner {
   min-height: 3rem;  
 }
-
 .button {
   font-size: 1rem;
   background-color: green;
@@ -33,7 +35,6 @@
   text-align: center;
   width: 32rem;
   border: 1px solid black;
-  font-family: Verdana, Arial;
   box-sizing: border-box;
   padding: 5px;
   display: inline-block;
