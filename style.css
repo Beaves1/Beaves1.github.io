@@ -132,6 +132,7 @@ body {
   vertical-align: top;
   text-align: left;
   padding: 1px 10px;
+  font-size: 1rem;
 }
 .infocontainer ul {
   padding-left: 18px;
@@ -151,8 +152,30 @@ body {
 
 
 @media only screen and (max-width: 600px) {
-  .card.notshrunk {
-    width: 25rem;
+  /* Fonts scaled to 0.7 of normal */
+  .namecontainer {
+    font-size: 1.75rem;
+  }
+  .statuscontainer {
+    font-size: 0.875rem; 
+  }
+  .infoheading {
+    font-size: 1.05rem;
+  }
+  .infocontainer div {
+    font-size: 0.7rem;
+  }
+  .card {
+    width: 100vw;
+  }
+  .meter {
+    height: 2.1rem;
+  }
+  #bigcardcontainer {
+    margin-top: 0;
+    margin-left: 0;
+    top: 0;
+    left: 0;
   }
 }
 
