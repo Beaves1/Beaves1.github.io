@@ -7,7 +7,8 @@ body {
   margin: 0px;
   background-image: url("images/nativebush.jpg");
   background-position: center center;
-  background-size: 200%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #banner {
   min-height: 3rem;  
@@ -52,21 +53,21 @@ body {
 }
 .theme1 .card,
 .theme1 #banner {
-  background-color: silver;
+  background-color: #b79341;
 }
 .theme1 .namecontainer,
 .theme1 .statuscontainer,
 .theme1 .infocontainer div {
-  background-color: #3c98959c;
+  background-color: #61892f;
 }
 .theme2 .card,
 .theme2 #banner {
-  background-color: #b79341; 
+  background-color: silver; 
 }
 .theme2 .namecontainer,
 .theme2 .statuscontainer,
 .theme2 .infocontainer div {
-  background-color: #61892f;
+  background-color: #3c98959c;
 }
 .wrapper.shrunk {
   float: left;
