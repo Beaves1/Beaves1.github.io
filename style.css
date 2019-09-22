@@ -4,9 +4,13 @@
 }
 body {
   font-family: Verdana, Arial;
+  margin: 0px;
 }
 #banner {
   min-height: 3rem;  
+}
+#bannercontainer {
+  padding: 15px 15px;
 }
 .button {
   font-size: 1rem;
@@ -24,24 +28,28 @@ body {
   transform: scale(0.4);
   transform-origin: top left;
 }
-.card.notshrunk {
+#bigcardcontainer {
   position: fixed;
   top: 50%;
   left: 50%;
   margin-top: -24rem;
   margin-left: -16rem;
+  transition: transform 0.8s;
+  transform: scale(1);
+}
+#bigcardcontainer.notdisplayed {
+  transform: scale(0) rotate(360deg);
 }
 .card {
   text-align: center;
   width: 32rem;
-  border: 1px solid black;
+  border: 3px solid black;
   box-sizing: border-box;
   padding: 5px;
-  display: inline-block;
 }
 .theme1 .card,
 .theme1 #banner {
-  background-color: #A76C28;
+  background-color: #b79341;
 }
 .theme1 .namecontainer,
 .theme1 .statuscontainer,

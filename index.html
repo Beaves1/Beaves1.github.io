@@ -13,7 +13,7 @@
     <script type="text/x-template" id="card-template">
       <div class="wrapper" v-bind:class="{'shrunk': small}">
         <div v-on:click="selected.anyname=selected.anyname==animal?null:animal;"
-            class="card" v-bind:class="{'shrunk': small, 'notshrunk': !small}">
+            class="card" v-bind:class="{'shrunk': small}">
           <div class="namecontainer">
             {{animal.name}}
           </div>
@@ -51,8 +51,10 @@
 
     <div id="app" v-bind:class="{'theme1': themer, 'theme2': !themer}"> 
       <div id="banner">
-        <h1 class="heading">New Zealand Native Animal Cards </h1>
-        <button class="button" v-on:click="themer=!themer" >Change Theme</button> 
+        <div id="bannercontainer"> 
+          <h1 class="heading">New Zealand Native Animal Cards </h1>
+          <button class="button" v-on:click="themer=!themer" >Change Theme</button> 
+        </div>
       </div>
 
       <div>
@@ -61,8 +63,10 @@
 
       <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
       </card>
-      <card v-if="selected.anyname" v-bind:animal="selected.anyname" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
-      </card>
+      <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.anyname}">
+        <card v-if="selected.anyname" v-bind:animal="selected.anyname" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
+        </card>
+      </div>
     </div>
 
     <!-- start vue app, after app div loaded -->
