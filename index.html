@@ -9,9 +9,6 @@
   </head>
 
   <body>
-    <div>
-      New Zealand native animals kiwi kea
-    </div>
 
     <script type="text/x-template" id="card-template">
       <div class="wrapper" v-bind:class="{'shrunk': small}">
@@ -28,7 +25,7 @@
             Status Level {{animal.level}}: {{animal.status}}
           </div>
           <div>
-            <img v-bind:src="animal.image" class="image">
+            <img v-bind:src="animal.image" alt="Native Animal photo" class="image">
           </div>
           <div class="infocontainer">
             <div class="threats">
@@ -52,10 +49,19 @@
       </div>
     </script>
 
-    <div id="app"> 
-      <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true">
+    <div id="app" v-bind:class="{'theme1': themer, 'theme2': !themer}"> 
+      <div id="banner">
+        <h1 class="heading">New Zealand Native Animal Cards </h1>
+        <button class="button" v-on:click="themer=!themer" >Change Theme</button> 
+      </div>
+
+      <div>
+        New Zealand native animals kiwi kea
+      </div>
+
+      <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
       </card>
-      <card v-if="selected.anyname" v-bind:animal="selected.anyname" v-bind:selected="selected" v-bind:small="false">
+      <card v-if="selected.anyname" v-bind:animal="selected.anyname" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
       </card>
     </div>
 
