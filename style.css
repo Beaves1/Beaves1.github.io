@@ -7,11 +7,11 @@ body {
   margin: 0px;
   background-image: url("images/nativebush.jpg");
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover 100%;
 }
 #banner {
-  min-height: 3rem;  
+  min-height: 3rem;
+  border: 2px solid black;  
 }
 #bannercontainer {
   padding: 15px 15px;
