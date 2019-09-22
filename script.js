@@ -139,7 +139,7 @@ const App = new Vue({
         facts: 
         [
           { text: 'Are capable at flying and are strong swimmers' },
-          { text: 'Are allowed to be hunted under license, because they are common' },
+          { text: 'Are allowed to be hunted under license' },
           { text: 'Can be aggressive, particuarly in self defence against predators' },
           { text: 'Feeds mostly on plants and occasionally various insects' },
           { text: 'Recognisable by their red, black and blue colouring' },
@@ -161,7 +161,7 @@ const App = new Vue({
         ],
         facts: 
         [
-          { text: 'Is one of the smallest dolphins in the world' },
+          { text: 'One of the smallest dolphins in the world' },
           { text: 'In the past, Maori would predict the weather based off its movements' },
           { text: 'Uses echolocation to find its food' },
           { text: 'Found in the water surrounding the South Island' },
@@ -187,6 +187,54 @@ const App = new Vue({
           { text: 'Spend days out at sea for food and then return to shore to rest' },
         ]
       },     
+      {
+        name: 'NZ Robin',
+        zoom: false,
+        status: 'Declining',
+        level: 5,
+        image: 'images/nz-robin-600x338.jpg',
+        threats: 
+        [
+          { text: 'Cats' },
+          { text: 'Stoats' },
+          { text: 'Rats' },
+          { text: 'Possums' },
+          { text: 'Deforestation' },
+
+        ],
+        facts: 
+        [
+          { text: 'Male Robins can sing a song for up to 30 minutes to attract a female' },
+          { text: 'Feeds mainly on small bugs' },
+          { text: 'Forages around in the ground and scans from perches to find its prey' },
+          { text: 'Has relatively long legs' },
+          { text: 'Lives in forest and scrub, generally favouring moist areas' }
+        ]
+      },
+      {
+        name: 'Chevron Skink',
+        zoom: false,
+        status: 'Nationally Vunerable',
+        level: 6,
+        image: 'images/chevron-skink-600x338.jpg',
+        threats: 
+        [
+          { text: 'Cats' },
+          { text: 'Motor Vehicles' },
+          { text: 'Rats' },
+          { text: 'Pigs' },
+          { text: 'Habitat Destruction' },
+
+        ],
+        facts: 
+        [
+          { text: 'Will grunt or squeak when its disturbed' },
+          { text: 'Grows up to 30cm long, making it NZs longest lizard' },
+          { text: 'Known to be a good climber' },
+          { text: 'Recognisable by the teardrop marking under each eye' },
+          { text: 'Very hard to find by people, because of its rarity and shyness ' },
+        ]
+      },
     ]
   }
 });
