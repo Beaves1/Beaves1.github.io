@@ -49,21 +49,21 @@ body {
 }
 .theme1 .card,
 .theme1 #banner {
-  background-color: #b79341;
+  background-color: silver;
 }
 .theme1 .namecontainer,
 .theme1 .statuscontainer,
 .theme1 .infocontainer div {
-  background-color: #61892f;
+  background-color: #3c98959c;
 }
 .theme2 .card,
 .theme2 #banner {
-  background-color: silver;
+  background-color: #b79341; 
 }
 .theme2 .namecontainer,
 .theme2 .statuscontainer,
 .theme2 .infocontainer div {
-  background-color: #3c98959c;
+  background-color: #61892f;
 }
 .wrapper.shrunk {
   float: left;
@@ -151,6 +151,10 @@ body {
 }
 
 
+/*
+ * Respond to smaller screens by reducing font size, endangered meter height and making
+ * width relative to the viewport
+ */
 @media only screen and (max-width: 600px) {
   /* Fonts scaled to 0.7 of normal */
   .namecontainer {
