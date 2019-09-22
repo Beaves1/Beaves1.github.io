@@ -2,7 +2,6 @@
 * {
   box-sizing: border-box;
 }
-
 .namecontainer {
   color: black;
   background-color: green;
@@ -33,7 +32,6 @@
   box-sizing: border-box;
   padding: 5px;
   display: inline-block;
-  transition: transform .2s;
 }
 .wrapper.shrunk {
   float: left;
@@ -119,5 +117,12 @@
   font-size: 1.5rem;
   text-align: center;
   margin: 8px 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card.notshrunk {
+    width: 25rem;
+  }
 }
 
