@@ -189,4 +189,21 @@ body {
     left: 0;
   }
 }
+@media only screen and (max-height: 2000px) {
+    .namecontainer {
+    font-size: 1.75rem;
+  }
+  .statuscontainer {
+    font-size: 0.875rem; 
+  }
+  .infoheading {
+    font-size: 1.05rem;
+  }
+  .infocontainer div {
+    font-size: 0.7rem;
+  }
+    .meter {
+    height: 2.1rem;
+  }
+}
 
