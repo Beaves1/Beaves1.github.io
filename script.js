@@ -7,12 +7,14 @@ const App = new Vue({
   el: '#app',
   data: 
   {
-    selected: { anyname: null},
-    themer: true, 
+    selected: { animal: null},
+    themer: true,
     animals: 
     [
       {
         name: 'Brown Kiwi', 
+        maoriname: 'Kiwi Parauri',
+        namer: true,
         zoom: false,
         status: 'Declining',
         level: 5,
@@ -37,6 +39,8 @@ const App = new Vue({
       },
       {
         name: 'Kea',
+        maoriname: 'Kea',
+        namer: true,
         zoom: false,
         status: 'Nationally Endangered',
         level: 7,
@@ -60,6 +64,8 @@ const App = new Vue({
       },
       {
         name: 'Yellow-Eyed Penguin',
+        maoriname: 'Hoiho',
+        namer: true,
         zoom: false,
         status: 'Nationally Endangered',
         level: 7,
@@ -83,6 +89,8 @@ const App = new Vue({
       },
       {
         name: 'Kakapo',
+        maoriname: 'Kākāpō',
+        namer: true,
         zoom: false,
         status: 'Nationally Critical',
         level: 8,
@@ -105,6 +113,8 @@ const App = new Vue({
       },
       {
         name: 'Blue Duck',
+        maoriname: 'Whio',
+        namer: true,
         zoom: false,
         status: 'Nationally Vunerable',
         level: 6,
@@ -128,6 +138,8 @@ const App = new Vue({
       },
       {
         name: 'Pukeko',
+        maoriname: 'Pūkeko',
+        namer: true,
         zoom: false,
         status: 'Not Threatened',
         level: 1,
@@ -147,6 +159,8 @@ const App = new Vue({
       },
       {
         name: 'Hectors Dolphin',
+        maoriname: 'Tutumairekurai',
+        namer: true,
         zoom: false,
         status: 'Nationally Vunerable',
         level: 6,
@@ -170,6 +184,8 @@ const App = new Vue({
       },
       {
         name: 'NZ Fur Seal',
+        maoriname: 'Kekeno',
+        namer: true,
         zoom: false,
         status: 'Not Threatened',
         level: 1,
@@ -189,6 +205,8 @@ const App = new Vue({
       },     
       {
         name: 'NZ Robin',
+        maoriname: 'Toutouwai',
+        namer: true,
         zoom: false,
         status: 'Declining',
         level: 5,
@@ -213,6 +231,8 @@ const App = new Vue({
       },
       {
         name: 'Chevron Skink',
+        maoriname: 'Niho Taniwha',
+        namer: true,
         zoom: false,
         status: 'Nationally Vunerable',
         level: 6,

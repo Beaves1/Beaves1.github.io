@@ -12,10 +12,10 @@
 
     <script type="text/x-template" id="card-template">
       <div class="wrapper" v-bind:class="{'shrunk': small}">
-        <div v-on:click="selected.anyname=selected.anyname==animal?null:animal;"
+        <div v-on:click="selected.animal = (selected.animal == animal ? null : animal)"
             class="card" v-bind:class="{'shrunk': small}">
-          <div class="namecontainer">
-            {{animal.name}}
+          <div class="namecontainer" v-on:click.stop="animal.namer=!animal.namer">
+            {{animal.namer ? animal.name : animal.maoriname}}
           </div>
           <div class="metercontainer"> 
             <div v-bind:class="'meter level' + animal.level">
@@ -63,8 +63,8 @@
 
       <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
       </card>
-      <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.anyname}">
-        <card v-if="selected.anyname" v-bind:animal="selected.anyname" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
+      <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.animal}">
+        <card v-if="selected.animal" v-bind:animal="selected.animal" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
         </card>
       </div>
     </div>
