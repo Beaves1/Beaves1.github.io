@@ -9,6 +9,7 @@ const App = new Vue({
   {
     selected: { animal: null},
     themer: true,
+    audio: null,
     animals: 
     [
       {
@@ -252,10 +253,26 @@ const App = new Vue({
           { text: 'Grows up to 30cm long, making it NZs longest lizard' },
           { text: 'Known to be a good climber' },
           { text: 'Recognisable by the teardrop marking under each eye' },
-          { text: 'Very hard to find by people, because of its rarity and shyness ' },
+          { text: 'Very hard to find by people, because of its rarity and shyness' },
         ]
       },
     ]
+  },
+  methods: 
+  {
+    changeSound() 
+    {
+      if (this.audio) 
+      {
+        this.audio.pause();
+        this.audio = null;
+      }
+      else
+      {
+        this.audio = new Audio('audio/46-tui-morning-chorus.mp3');
+        this.audio.play();
+      }
+    }
   }
 });
 

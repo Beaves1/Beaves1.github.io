@@ -18,7 +18,7 @@
             {{animal.namer ? animal.name : animal.maoriname}}
           </div>
           <div class="metercontainer"> 
-            <div v-bind:class="'meter level' + animal.level">
+            <div class="meter" v-bind:class="'level' + animal.level">
             </div>
           </div>
           <div class="statuscontainer">
@@ -53,6 +53,7 @@
       <div id="banner">
         <div id="bannercontainer"> 
           <h1 class="heading">New Zealand Native Animal Cards </h1>
+          <button class="button" v-on:click.prevent="changeSound()">Sound On/Off</button>
           <button class="button" v-on:click="themer=!themer" >Change Theme</button> 
         </div>
       </div>
