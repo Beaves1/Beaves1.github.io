@@ -161,6 +161,9 @@ body {
  */
 @media only screen and (max-width: 600px) {
   /* Fonts scaled to 0.7 of normal */
+  body {
+    background-size: cover;
+  }
   .namecontainer {
     font-size: 1.75rem;
   }
