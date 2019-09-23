@@ -10,6 +10,9 @@
 
   <body>
 
+    <!--
+     Define the template for a card referenced from the Vue component by the id "card-template"
+    -->
     <script type="text/x-template" id="card-template">
       <div class="wrapper" v-bind:class="{'shrunk': small}">
         <div v-on:click="selected.animal = (selected.animal == animal ? null : animal)"
@@ -50,6 +53,8 @@
     </script>
 
     <div id="app" v-bind:class="{'theme1': themer, 'theme2': !themer}"> 
+
+      <!-- Banner content including interactive buttons -->
       <div id="banner">
         <div id="bannercontainer"> 
           <h1 class="heading">New Zealand Native Animal Cards </h1>
@@ -58,19 +63,23 @@
         </div>
       </div>
 
+      <!-- General information -->
       <div>
         New Zealand native animals kiwi kea
       </div>
 
+      <!-- Loop over animals outputting small cards -->
       <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
       </card>
+
+      <!-- Big card, if selected -->
       <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.animal}">
         <card v-if="selected.animal" v-bind:animal="selected.animal" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
         </card>
       </div>
     </div>
 
-    <!-- start vue app, after app div loaded -->
+    <!-- Start vue app, after app div loaded -->
     <script src="script.js"></script>
 
   </body>

@@ -194,7 +194,6 @@ const App = new Vue({
         threats: 
         [
           { text: 'There are no significant threats to the NZ Fur Seal population, as they are "Not Threatened"' },
-
         ],
         facts: 
         [
@@ -219,7 +218,6 @@ const App = new Vue({
           { text: 'Rats' },
           { text: 'Possums' },
           { text: 'Deforestation' },
-
         ],
         facts: 
         [
@@ -245,7 +243,6 @@ const App = new Vue({
           { text: 'Rats' },
           { text: 'Pigs' },
           { text: 'Habitat Destruction' },
-
         ],
         facts: 
         [
@@ -256,6 +253,52 @@ const App = new Vue({
           { text: 'Very hard to find by people, because of its rarity and shyness' },
         ]
       },
+      {
+        name: 'Kokako',
+        maoriname: 'Kōkako',
+        namer: true,
+        zoom: false,
+        status: 'Recovering',
+        level: 4,
+        image: 'images/kokako-600x338.jpg',
+        threats: 
+        [
+          { text: 'Possums' },
+          { text: 'Stoats' },
+          { text: 'Rats' },
+          { text: 'Cats' },
+          { text: 'Habitat Destruction' },
+
+        ],
+        facts: 
+        [
+          { text: 'Mainly feeds on fruit and leaves' },
+          { text: 'Females undergo a 50 day incubation process for birth, which makes them easy targets for predators, resulting int there to be more Male Kokako than Female' },
+          { text: 'Stays perched up in trees most of the time' },
+          { text: 'Known for the loud haunting song it sings' },
+        ]
+      },
+      {
+        name: 'Tui',
+        maoriname: 'Tūī',
+        namer: true,
+        zoom: false,
+        status: 'Not Threatened',
+        level: 1,
+        image: 'images/tui-600x338.jpg',
+        threats: 
+        [
+          { text: 'There are no significant threats to the NZ Fur Seal population, as they are "Not Threatened"' },
+        ],
+        facts: 
+        [
+          { text: 'Recognisable by the white tuft under their throat' },
+          { text: 'Known to be aggresive when defending their feeding territory' },
+          { text: 'Feeds on various nectar and fruits' },
+          { text: 'Usually very vocal, mixing tuneful notes with coughs and grunts' },
+          { text: 'Are a common bird, found throughtout most of NZ' },
+        ]
+      },  
     ]
   },
   methods: 
