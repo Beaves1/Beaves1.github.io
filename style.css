@@ -16,12 +16,37 @@ body {
 #bannercontainer {
   padding: 15px 15px;
 }
-.bannercontainer a {
-  
+.headinglinks {
+  font-size: 1.25rem;
+  background-color: white;
+  color: black;
+  padding: 1px 6px;
+  display: inline-block;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+.headinglinks a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.headinglinks a:visited {
+  text-decoration: none;
+  color: black;
+}
+.headinglinks a:hover {
+  text-decoration: underline;
+}
+.headinglinks a:active {
+  text-decoration: underline;
 }
 .button {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  color: black;
   background-color: white;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 1px 6px;
 }
 .infotext {
   font-size: 1.15rem;
