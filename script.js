@@ -374,7 +374,7 @@ const App = new Vue({
       }
       else
       {
-        this.audio = new Audio('audio/46-tui-morning-chorus.mp3');
+        this.audio = new Audio('audio/46-tui-morning-chorus-edited.mp3');
         this.audio.play();
       }
     }
