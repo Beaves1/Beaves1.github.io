@@ -16,6 +16,9 @@ body {
 #bannercontainer {
   padding: 15px 15px;
 }
+.bannercontainer a {
+  
+}
 .button {
   font-size: 1rem;
   background-color: white;

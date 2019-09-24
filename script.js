@@ -291,7 +291,7 @@ const Animals =
 
 
 Vue.component('card', {
-  props: ['animal','selected','small','themer'],
+  props: ['animal','selected','small'],
   template: '#card-template'
 });
 
@@ -315,7 +315,6 @@ const CardsComponent =
   {
     var result =
     {
-      themer: true,
       selected: { animal: null},
       animals: Animals
     };

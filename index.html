@@ -65,12 +65,12 @@
     <script type="text/x-template" id="cardspage-template">
       <div>
         <!-- Loop over animals outputting small cards -->
-        <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
+        <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true">
         </card>
 
         <!-- Big card, if selected -->
         <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.animal}">
-          <card v-if="selected.animal" v-bind:animal="selected.animal" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
+          <card v-if="selected.animal" v-bind:animal="selected.animal" v-bind:selected="selected" v-bind:small="false">
           </card>
         </div>
       </div>
