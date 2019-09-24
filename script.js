@@ -1,16 +1,4 @@
-Vue.component('card', {
-  props: ['animal','selected','small','themer'],
-  template: '#card-template'
-});
-
-const App = new Vue({
-  el: '#app',
-  data: 
-  {
-    selected: { animal: null},
-    themer: true,
-    audio: null,
-    animals: 
+const Animals =     
     [
       {
         name: 'Brown Kiwi', 
@@ -299,7 +287,82 @@ const App = new Vue({
           { text: 'Are a common bird, found throughtout most of NZ' },
         ]
       },  
-    ]
+    ];
+
+
+Vue.component('card', {
+  props: ['animal','selected','small','themer'],
+  template: '#card-template'
+});
+
+
+const NotfoundComponent = 
+{
+  template: '<h1>Not found</h1>'
+};
+
+
+const HomeComponent = 
+{
+  template: '#homepage-template'
+};
+
+
+const CardsComponent = 
+{ 
+  template: '#cardspage-template',
+  data: function() 
+  {
+    var result =
+    {
+      themer: true,
+      selected: { animal: null},
+      animals: Animals
+    };
+    return result; 
+  }
+};
+
+
+const CreditsComponent = 
+{
+  template: '#creditspage-template'
+};
+
+
+const Routes = 
+[
+  {
+    path: '/',
+    component: HomeComponent
+  },
+  {
+    path: '/cards',
+    component: CardsComponent,
+  },
+  {
+    path: '/credits',
+    component: CreditsComponent,
+  },
+  {
+    path: '*',
+    component: NotfoundComponent
+  }
+];
+
+
+const Router = new VueRouter({
+  routes: Routes
+});
+
+
+const App = new Vue({
+  el: '#app',
+  router: Router,
+  data: 
+  {
+    themer: true,
+    audio: null,
   },
   methods: 
   {

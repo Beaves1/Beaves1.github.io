@@ -5,10 +5,92 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>NZ Native Animal Cards</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.1.3/vue-router.js"></script>
   </head>
 
   <body>
+    <script type="text/x-template" id="homepage-template">
+      <div>
+        <div class="infotext">
+          <h2> Web-Application Explanation </h2>
+
+          <p>
+            This web application uses cards to show important information about New Zealand's
+            Native Animals. The 12 cards displayed all contain a box of facts about their
+            respective native animal. On the left of this is a box containing all of the things
+            that threaten that animal species survival.
+          </p>
+        </div>
+
+        <div class="infotext">
+          <h3> Endangered Meter and Status Level </h3>
+
+          <p>
+            Each card has a status level indicating the endangered status level of the
+            animal. The endangered status level is shown visually with a bar using the colours
+            assigned by the
+            <a href="https://www.doc.govt.nz/nature/conservation-status/" target="_blank">
+              Department of Conservation.
+            </a>
+            The status levels range from 1 being 'Not Threatened' to 8 being 'Nationally Critical'.
+          </p>
+        </div>
+
+        <div class="infotext last">
+          <h3> Interactivity </h3>
+
+          <ul>
+            <li>
+              Clicking on a card will enlarge the card and place it in the centre of the screen.
+            </li>
+            <li>
+              Clicking on the card again will return it to its original size.
+            </li>
+            <li>
+              Clicking on the name of each animal will toggle the animals name between English and
+              Māori (unless the English name is the same as the Māori name).
+            </li>
+            <li>
+              At the top of the screen there are two buttons, one which plays some of the sounds
+              heard in New Zealand's native bush, the other changing the colour theme of the
+              web-application.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+
+    <script type="text/x-template" id="cardspage-template">
+      <div>
+        <!-- Loop over animals outputting small cards -->
+        <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
+        </card>
+
+        <!-- Big card, if selected -->
+        <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.animal}">
+          <card v-if="selected.animal" v-bind:animal="selected.animal" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
+          </card>
+        </div>
+      </div>
+    </script>
+
+
+    <script type="text/x-template" id="creditspage-template">
+      <div>
+        <div class="infotext">
+          <h2> Credits </h2>
+
+          <ul>
+            <li>
+              To do credits.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
 
     <!--
      Define the template for a card referenced from the Vue component by the id "card-template"
@@ -20,7 +102,7 @@
           <div class="namecontainer" v-on:click.stop="animal.namer=!animal.namer">
             {{animal.namer ? animal.name : animal.maoriname}}
           </div>
-          <div class="metercontainer"> 
+          <div class="metercontainer">
             <div class="meter" v-bind:class="'level' + animal.level">
             </div>
           </div>
@@ -33,7 +115,7 @@
           <div class="infocontainer">
             <div class="threats">
               <h1 class="infoheading">Threats</h1>
-              <ul> 
+              <ul>
                 <li v-for="threat in animal.threats">
                   {{threat.text}}
                 </li>
@@ -41,7 +123,7 @@
             </div>
             <div class="facts">
               <h1 class="infoheading">Facts</h1>
-              <ul> 
+              <ul>
                 <li v-for="fact in animal.facts">
                   {{fact.text}}
                 </li>
@@ -52,47 +134,25 @@
       </div>
     </script>
 
-    <div id="app" v-bind:class="{'theme1': themer, 'theme2': !themer}"> 
+
+    <div id="app" v-bind:class="{'theme1': themer, 'theme2': !themer}">
 
       <!-- Banner content including interactive buttons -->
       <div id="banner">
-        <div id="bannercontainer"> 
+        <div id="bannercontainer">
           <h1 class="heading">New Zealand Native Animal Cards </h1>
+
+          <router-link to="/">Home</router-link>
+          <router-link to="/cards">Cards</router-link>
+          <router-link to="/credits">Credits</router-link>
+
           <button class="button" v-on:click.prevent="changeSound()">Sound On/Off</button>
-          <button class="button" v-on:click="themer=!themer" >Change Theme</button> 
+          <button class="button" v-on:click="themer=!themer" >Change Theme</button>
         </div>
       </div>
 
-      <!-- General information -->
+      <router-view></router-view>
 
-      <div class="textexplanation">
-        <h2> Web-Application Explanation </h2>
-
-        <p>This web application uses cards to show important information about New Zealand's Native Animals. The 12 cards displayed all contain a box of facts about their respective native animal. On the left of this is a box containing all of the things that threaten that animal species survival. </p>
-      </div>
-
-      <div class="textendangered">
-        <h3> Endangered Meter and Status level </h3>
-
-        <p>At the top of each card you will notice a coloured bar. This coloured bar is called the 'endangered meter' and shows the status levels of each animal with 1 being 'Not Threatened' up to 8 being 'Nationally Critical'. The colouring of the endangered meter and the status levels on the cards are based off colouring that the "Department of Conservation' assigns to each status level and each animal.</p>
-      </div>
-      
-      <div class="textinteractivity">
-        <h3> Interactivity </h3>
-
-        <p>Clicking on a card will enlarge the card and place it in the centre of the screen. Clicking on the card again will return it to its original size. Clicking on the name of each animal will toggle the animals name between English and Maori (unless the English name is the same as the Maori name). At the top of the screen there are two buttons, one which plays some of the sounds heard in New Zealand's native bush, the other changing the colour theme of the web-application.</p>
-      </div>
-
-
-      <!-- Loop over animals outputting small cards -->
-      <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">
-      </card>
-
-      <!-- Big card, if selected -->
-      <div id="bigcardcontainer" v-bind:class="{'notdisplayed': !selected.animal}">
-        <card v-if="selected.animal" v-bind:animal="selected.animal" v-bind:selected="selected" v-bind:small="false" v-bind:themer="themer">
-        </card>
-      </div>
     </div>
 
     <!-- Start vue app, after app div loaded -->
