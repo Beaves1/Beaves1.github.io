@@ -64,9 +64,25 @@
       </div>
 
       <!-- General information -->
-      <div>
-        New Zealand native animals kiwi kea
+
+      <div class="textexplanation">
+        <h2> Web-Application Explanation </h2>
+
+        <p>This web application uses cards to show important information about New Zealand's Native Animals. The 12 cards displayed all contain a box of facts about their respective native animal. On the left of this is a box containing all of the things that threaten that animal species survival. </p>
       </div>
+
+      <div class="textendangered">
+        <h3> Endangered Meter and Status level </h3>
+
+        <p>At the top of each card you will notice a coloured bar. This coloured bar is called the 'endangered meter' and shows the status levels of each animal with 1 being 'Not Threatened' up to 8 being 'Nationally Critical'. The colouring of the endangered meter and the status levels on the cards are based off colouring that the "Department of Conservation' assigns to each status level and each animal.</p>
+      </div>
+      
+      <div class="textinteractivity">
+        <h3> Interactivity </h3>
+
+        <p>Clicking on a card will enlarge the card and place it in the centre of the screen. Clicking on the card again will return it to its original size. Clicking on the name of each animal will toggle the animals name between English and Maori (unless the English name is the same as the Maori name). At the top of the screen there are two buttons, one which plays some of the sounds heard in New Zealand's native bush, the other changing the colour theme of the web-application.</p>
+      </div>
+
 
       <!-- Loop over animals outputting small cards -->
       <card v-for="a in animals" v-bind:animal="a" v-bind:selected="selected" v-bind:small="true" v-bind:themer="themer">

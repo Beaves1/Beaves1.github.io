@@ -18,7 +18,28 @@ body {
 }
 .button {
   font-size: 1rem;
-  background-color: green;
+  background-color: white;
+}
+.textexplanation {
+  font-size: 1.25rem;
+  border: 2px solid black;
+  padding: 25px 25px;
+  display: inline-block;
+  margin: 30px 10px 0px;
+}
+.textendangered {
+  font-size: 1.25rem;
+  border: 2px solid black;
+  padding: 25px 25px;
+  display: inline-block;
+  margin: 30px 10px 0px;
+}
+.textinteractivity {
+  font-size: 1.25rem;
+  border: 2px solid black;
+  padding: 25px 25px;
+  display: inline-block;
+  margin: 30px 10px 30px;
 }
 .namecontainer {
   color: black;
@@ -57,7 +78,10 @@ body {
 }
 .theme1 .namecontainer,
 .theme1 .statuscontainer,
-.theme1 .infocontainer div {
+.theme1 .infocontainer div,
+.theme1 .textexplanation,
+.theme1 .textendangered,
+.theme1 .textinteractivity {
   background-color: #61892f;
 }
 .theme2 .card,
@@ -66,8 +90,11 @@ body {
 }
 .theme2 .namecontainer,
 .theme2 .statuscontainer,
-.theme2 .infocontainer div {
-  background-color: #3c98959c;
+.theme2 .infocontainer div,
+.theme2 .textexplanation,
+.theme2 .textendangered,
+.theme2 .textinteractivity {
+  background-color: #4b9694;
 }
 .wrapper.shrunk {
   float: left;
