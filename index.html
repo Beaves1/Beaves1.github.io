@@ -80,19 +80,82 @@
     <script type="text/x-template" id="creditspage-template">
       <div>
         <div class="infotext">
-          <h2> Credits </h2>
-
+          <h2> Content </h2>
           <ul>
             <li>
-              Audio file I used= 
-              <a href="https://www.doc.govt.nz/link/8bda0ac69776450a9db708c835f6c700.mp3" target="_blank">
-              https://www.doc.govt.nz/link/8bda0ac69776450a9db708c835f6c700.mp3
+              Department of Conservation has provided lots of valauble, reliable information for this project-
+              <ul>
+                <li>
+                  <a href="https://www.doc.govt.nz/nature/native-animals/" target="_blank">
+                    Native animal information,
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.doc.govt.nz/nature/native-animals/birds/bird-songs-and-calls/" target="_blank">
+                    Native bird audio
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              New Zealand Birds Online has provided me with in-depth information about NZ birds for this project-
+              <ul>
+                <li>
+                  <a href="http://nzbirdsonline.org.nz/" target="_blank">
+                    Native bird information
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Thank you to all the individuals that provided their photographs free to use.
+          </ul>
+            
+        </div>
+
+        <div class="infotext">
+          <h2> Tools </h2>
+          <ul>
+            <li>
+              GitHub has provided
+              <a href="https://github.com/Beaves1/Beaves1.github.io" target="_blank">
+                version control
               </a>
-              , Department of Conservation, Date unknown, Bird songs and calls, Dawn chorus with tūī in the foreground,
-              <a href="https://www.doc.govt.nz/nature/native-animals/birds/bird-songs-and-calls/" target="_blank">
-              https://www.doc.govt.nz/nature/native-animals/birds/bird-songs-and-calls/
+              and the hosting of this web-application.
+            </li>
+            <li>
+              This web-application is powered by the
+              <a href="https://vuejs.org/" target="_blank">
+                Vue framework
               </a>
             </li>
+            <li>
+              <a href="https://www.gimp.org/" target="_blank">
+                GIMP
+              </a>
+              was used for image editing
+            </li>
+            <li>
+              <a href="https://www.audacityteam.org/" target="_blank">
+                Audacity
+              </a>
+              was used for audio editing
+            </li>
+            <li>
+              <a href="https://freedcamp.com/" target="_blank">
+                Freedcamp
+              </a>
+              was used for project management
+            </li>
+            <li>
+              The
+              <a href="https://validator.w3.org/" target="_blank">
+                W3C validators
+              </a>
+              were used to check my code
+            </li>
+
+                   
           </ul>
         </div>
       </div>
@@ -149,14 +212,14 @@
         <div id="bannercontainer">
           <h1 class="heading">New Zealand Native Animal Cards </h1>
 
-          <div class="headinglinks">
-          <router-link to="/">Home</router-link>
+          <div class="headinglink">
+            <router-link to="/">Home</router-link>
           </div>
-          <div class="headinglinks">
-          <router-link to="/cards">Cards</router-link>
+          <div class="headinglink">
+            <router-link to="/cards">Cards</router-link>
           </div>
-          <div class="headinglinks">
-          <router-link to="/credits">Credits</router-link>
+          <div class="headinglink">
+            <router-link to="/credits">Credits</router-link>
           </div>
           <button class="button" v-on:click.prevent="changeSound()">Sound On/Off</button>
           <button class="button" v-on:click="themer=!themer" >Change Theme</button>

@@ -16,7 +16,7 @@ body {
 #bannercontainer {
   padding: 15px 15px;
 }
-.headinglinks {
+.headinglink {
   font-size: 1.25rem;
   background-color: white;
   color: black;
@@ -25,19 +25,19 @@ body {
   border: 1px solid black;
   margin-right: 10px;
 }
-.headinglinks a:link {
+.headinglink a:link {
   text-decoration: none;
   color: black;
 }
 
-.headinglinks a:visited {
+.headinglink a:visited {
   text-decoration: none;
   color: black;
 }
-.headinglinks a:hover {
+.headinglink a:hover {
   text-decoration: underline;
 }
-.headinglinks a:active {
+.headinglink a:active {
   text-decoration: underline;
 }
 .button {
