@@ -1,3 +1,6 @@
+/*
+ * Data for animal cards. The namer and zoom properties change with user interaction.
+ */
 const Animals =
 [
   {

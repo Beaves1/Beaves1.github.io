@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <!-- Define template for home page component -->
     <script type="text/x-template" id="homepage-template">
       <div>
         <div class="infotext">
@@ -62,6 +63,7 @@
     </script>
 
 
+    <!-- Define template for cards page component -->
     <script type="text/x-template" id="cardspage-template">
       <div>
         <!-- Loop over animals outputting small cards -->
@@ -77,6 +79,7 @@
     </script>
 
 
+    <!-- Define template for credits page component -->
     <script type="text/x-template" id="creditspage-template">
       <div>
         <div class="infotext">
@@ -110,8 +113,7 @@
             <li>
               Thank you to all the individuals that provided their photographs free to use.
             </li>
-          </ul>
-            
+          </ul> 
         </div>
 
         <div class="infotext">
@@ -154,9 +156,7 @@
                 W3C validators
               </a>
               were used to check my code
-            </li>
-
-                   
+            </li>       
           </ul>
         </div>
       </div>
@@ -206,6 +206,7 @@
     </script>
 
 
+    <!-- Vue app associates with this div by id -->
     <div id="app" v-bind:class="{'theme1': themer, 'theme2': !themer}">
 
       <!-- Banner content including interactive buttons -->
@@ -227,6 +228,7 @@
         </div>
       </div>
 
+      <!-- Router inserts page components here -->
       <router-view></router-view>
 
     </div>

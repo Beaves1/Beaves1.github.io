@@ -1,4 +1,4 @@
-
+/* Makes borders contribute to the element size for all elements */
 * {
   box-sizing: border-box;
 }
@@ -30,7 +30,6 @@ body {
   text-decoration: none;
   color: black;
 }
-
 .headinglink a:visited {
   text-decoration: none;
   color: black;
@@ -89,26 +88,6 @@ body {
   border: 3px solid black;
   box-sizing: border-box;
   padding: 5px;
-}
-.theme1 .card,
-.theme1 #banner {
-  background-color: #b79341;
-}
-.theme1 .namecontainer,
-.theme1 .statuscontainer,
-.theme1 .infocontainer div,
-.theme1 .infotext {
-  background-color: #61892f;
-}
-.theme2 .card,
-.theme2 #banner {
-  background-color: silver; 
-}
-.theme2 .namecontainer,
-.theme2 .statuscontainer,
-.theme2 .infocontainer div,
-.theme2 .infotext {
-  background-color: #4b9694;
 }
 .wrapper.shrunk {
   float: left;
@@ -197,8 +176,33 @@ body {
 
 
 /*
+ * The theme1 and theme2 classes are applied to the application div.
+ */
+.theme1 .card,
+.theme1 #banner {
+  background-color: #b79341;
+}
+.theme1 .namecontainer,
+.theme1 .statuscontainer,
+.theme1 .infocontainer div,
+.theme1 .infotext {
+  background-color: #61892f;
+}
+.theme2 .card,
+.theme2 #banner {
+  background-color: silver; 
+}
+.theme2 .namecontainer,
+.theme2 .statuscontainer,
+.theme2 .infocontainer div,
+.theme2 .infotext {
+  background-color: #4b9694;
+}
+
+
+/*
  * Respond to smaller screens by reducing font size, endangered meter height and making
- * width relative to the viewport
+ * width relative to the viewport.
  */
 @media only screen and (max-width: 600px) {
   /* Fonts scaled to 0.7 of normal */
@@ -230,6 +234,7 @@ body {
     left: 0;
   }
 }
+
 @media only screen and (max-height: 700px) {
   #bigcardcontainer {
     transform: scale(0.80);

@@ -1,21 +1,18 @@
-Vue.component('card', {
-  props: ['animal', 'selected', 'small'],
-  template: '#card-template'
-});
-
-
+// Not found page
 const NotfoundComponent = 
 {
   template: '<h1>Not found</h1>'
 };
 
 
+// Home page
 const HomeComponent = 
 {
   template: '#homepage-template'
 };
 
 
+// Cards page
 const CardsComponent = 
 { 
   template: '#cardspage-template',
@@ -31,12 +28,14 @@ const CardsComponent =
 };
 
 
+// Credits page
 const CreditsComponent = 
 {
   template: '#creditspage-template'
 };
 
 
+// Page routes
 const Routes = 
 [
   {
@@ -58,11 +57,20 @@ const Routes =
 ];
 
 
+// Vue router
 const Router = new VueRouter({
   routes: Routes
 });
 
 
+// Card component
+Vue.component('card', {
+  props: ['animal', 'selected', 'small'],
+  template: '#card-template'
+});
+
+
+// Vue application
 const App = new Vue({
   el: '#app',
   router: Router,
