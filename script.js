@@ -261,7 +261,7 @@ const Animals =
         facts: 
         [
           { text: 'Mainly feeds on fruit and leaves' },
-          { text: 'Females undergo a 50 day incubation process for birth, which makes them easy targets for predators, resulting int there to be more Male Kokako than Female' },
+          { text: 'Females undergo a 50 day incubation process for birth, making them easy prey for predators, thus causing there to be more Male Kokako than Female Kokako' },
           { text: 'Stays perched up in trees most of the time' },
           { text: 'Known for the loud haunting song it sings' },
         ]
@@ -284,7 +284,7 @@ const Animals =
           { text: 'Known to be aggresive when defending their feeding territory' },
           { text: 'Feeds on various nectar and fruits' },
           { text: 'Usually very vocal, mixing tuneful notes with coughs and grunts' },
-          { text: 'Are a common bird, found throughtout most of NZ' },
+          { text: 'Are a common bird, found throughout most of NZ' },
         ]
       },  
     ];
