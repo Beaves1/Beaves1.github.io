@@ -52,7 +52,6 @@ body {
   font-size: 1.15rem;
   border: 2px solid black;
   padding: 15px 25px;
-  display: inline-block;
   margin: 30px 10px 0px;
 }
 .infotext.last {
