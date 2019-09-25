@@ -24,6 +24,7 @@ body {
   display: inline-block;
   border: 1px solid black;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .headinglink a:link {
   text-decoration: none;
